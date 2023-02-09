@@ -6,7 +6,14 @@ type UserCardPropsType = {
     name: string,
     email: string
 }
-
+/**
+ * Component renders users card
+ * @param {string} picture link on users avatar
+ * @param {string} name users first name
+ * @param {string} email users email
+ * @returns {ReactElement} users card with inserted data
+ * @constructor
+ */
 export const UserCard = ({picture, name, email}: UserCardPropsType): ReactElement => {
     return (
         <div className={styles.card}>

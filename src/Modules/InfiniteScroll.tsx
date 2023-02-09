@@ -3,6 +3,10 @@ import { RootObjectResults } from '../Types/RandomUserResponseType';
 import { UserCard } from '../Components/UserCard';
 import { UsersAPI } from '../API/UsersAPI';
 
+/**
+ * Component renders amount of users cards according to data from server
+ * @constructor
+ */
 export const InfiniteScroll = () => {
     const [profiles, setProfiles] = useState<RootObjectResults[]>([]);
     const [currentPage, setCurrentPage] = useState<number>(1);
@@ -29,8 +33,12 @@ export const InfiniteScroll = () => {
         }
     }, [])
 
-    const scrollHandler = (e: any): void => {
-        if (e.target.documentElement.scrollHeight - (e.target.documentElement.scrollTop + window.innerHeight) < 60) {
+    /**
+     * The function determines when user reaches the bottom of the page and turns fetching status on
+     * @param {any} event scrolling event, generated automatically
+     */
+    const scrollHandler = (event: any): void => {
+        if (event.target.documentElement.scrollHeight - (event.target.documentElement.scrollTop + window.innerHeight) < 60) {
             setFetching(true)
         }
     }

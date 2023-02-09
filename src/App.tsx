@@ -2,7 +2,10 @@ import React from 'react';
 import './App.css';
 import { InfiniteScroll } from './Modules/InfiniteScroll';
 
-//component
+/**
+ * Renders root element of the application
+ * @constructor
+ */
 function App() {
     return (
         <div className="App">
