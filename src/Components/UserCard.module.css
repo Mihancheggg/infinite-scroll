@@ -1,0 +1,22 @@
+.card {
+    width: 450px;
+    height: 150px;
+    display: flex;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.image {
+    height: 100%;
+    width: auto;
+    border-radius: 10px 0 0 10px;
+}
+
+.userInfo {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
