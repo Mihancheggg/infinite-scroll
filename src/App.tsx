@@ -1,7 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import './App.css';
-import { RootObjectResults } from './Types/RandomUserResponseType';
-import { UserCard } from './Components/UserCard';
 import { InfiniteScroll } from './Modules/InfiniteScroll';
 
 //component

@@ -38,7 +38,7 @@ export const InfiniteScroll = () => {
     return (
         <div>
             {profiles.map((el, index) =>
-                <UserCard picture={el.picture.large} name={el.name.first} email={el.email}/>
+                <UserCard key={index} picture={el.picture.large} name={el.name.first} email={el.email}/>
             )}
         </div>
     );
