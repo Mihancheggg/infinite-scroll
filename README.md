@@ -6,7 +6,6 @@ Component which adds entities when user reaches the bottom of the page.
 
 - **TypeScript**
 - **React**
-- **Jest**
 
 
 ## Setup
